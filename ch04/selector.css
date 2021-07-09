@@ -1,0 +1,9 @@
+body{ /*스타일 상속 */
+    font-size: 1.2em;                         /*1em-16px로 상대크기로 전체 크기비율 키울때*/
+}
+h2{
+   color: orange; !important;              /* !important 스타일 우선순위가 높다*/
+}
+.RedText{
+   color: red;
+}

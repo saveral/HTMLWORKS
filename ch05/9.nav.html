@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네비게이션 메뉴</title>
+    <style>
+        div{
+            padding: 20px;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{   /*ul 인지 ul li인지 ul li a인지 헷갈릴텐데 이건 많이 해보면 된다고 한다*/
+            display: inline;
+            margin-right: 15px;
+            border-top: 3px solid #222;
+            padding: 10px 20px;                        
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;        
+        }
+        ul li:hover{ /*마우스를 올려놓으면 작동하게하는 옵션*/
+            background-color: crimson;
+        }
+        ul li a:hover{  /*링크가 걸린 태그에 마우스를 대면 바뀌는 색상설정 */
+            color: red;            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="#">애완견 종류</a></li>
+                <li><a href="#">입양하기</a></li>
+                <li><a href="#">건강돌보기</a></li>
+                <li><a href="#">더불어살기</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

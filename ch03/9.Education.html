@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기 소개 - 학력 사항</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            text-align: center;
+        }
+         td{ /*공통으로 적용할땐 쉼표(,)처리한다*/
+            border: 1px solid #ccc;         
+            height: 40px;   
+            padding: 10px 20px 10px 20px;
+            /* top, right, bottm, left */
+        }
+         th{ 
+            border: 1px solid #ccc;         
+            height: 30px;               
+            /* top, right, bottm, left */
+        }
+        thead{
+            background-color: aqua;
+                    }
+        caption{line-height: 2;}
+    </style>
+</head>
+<body>
+    <h2>Education</h2>
+    <table>
+        <caption>학력사항</caption>
+        <thead>
+            <tr>
+                <!-- td->th는 굵게 바꾸는 것 -->
+                <th>출신학교</th>        
+                <th>전공</th>
+                <th>기간</th>
+                <th>구분</th>
+                <!-- ctrl+H로 바꾸기할 수있음 -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>한강대학교</td>                
+                <td>소프트웨어과</td>
+                <td>2010.3~2016.2</td>
+                <td>졸업</td>
+                
+            </tr>
+            <tr>
+                <td>한강고등학교</td>
+                <td>이공계열</td>
+                <td>2008.3~2010.2</td>
+                <td>졸업</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

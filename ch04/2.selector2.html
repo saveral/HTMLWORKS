@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여러가지 css 선택자</title>
+    <style>
+        body{ /*스타일 상속 */
+             font-size: 1.2em;                         /*1em-16px로 상대크기로 전체 크기비율 키울때*/
+        }
+        h2{
+            color: orange; !important;              /* !important 스타일 우선순위가 높다*/
+        }
+        .RedText{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">              <!-- div은 division약자로 특정 구역을 생성하여 관리한다 -->                               
+        <h1 style="color: green;">레드향</h1>
+        <p class="RedText">껍질에 붉은 빛이 돌아 레드향이라고 불린다.</p>               <!-- P단위 -->
+        <p><span class="RedText">레드향</span>은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p> <!-- 단어단위 -->                                                                                    
+        <p><span style="color:orange"> 비타민C</span>와 비타민 P가 풍부해 혈액순환, 감기 예방 등에 좋은 것으로 알려져 있다.</p><!-- 단어단위(인라인) -->                                                                                     
+    </div>
+</body>
+</html>

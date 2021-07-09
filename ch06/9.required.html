@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기</title>
+    <style>
+        #shipping{
+            list-style: none;
+        }
+        #shipping li{
+            line-height: 2.5;
+        }
+        label{
+            width: 80px;
+            float: left;
+        }
+        fieldset{
+            margin-bottom: 10px;
+        }
+        input[type="submit"]{/* 첨배우는거임 특정구간에 효과줄때 직각괄로 사용(버튼크기) */
+            width: 100px;
+            height: 30;
+            margin: 5px;
+            
+        }
+        input[type="reset"]{
+            width: 100px;
+            height: 30;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form accept="" method="post">
+            <fieldset>
+                    <legend>배송정보</legend>
+                    <ul id="shipping">
+                        <li>
+                            <label for="prod">주문 상품</label>
+                            <input type="text" id="prod" value="상품용 3kg" readonly><!-- 읽기전용 -->
+                        </li>
+                        <li>
+                            <label for="name">이름</label>
+                            <input type="text" id="name" autofocus required><!-- 커서 자동으로 -->
+                        </li>
+                        <li>
+                            <label for="addr">주소</label>
+                            <input type="text" id="addr" size=30 required><!-- 필수입력란 -->
+                        </li>
+                        <li>
+                            <label for="email">email</label>
+                            <input type="email" id="email">
+                        </li>
+                        <li>
+                            <label for="phone">연락처</label>
+                            <input type="tel" id="addr" placeholder="하이픈 빼고 입력해 주세요" required>
+                        </li>
+                        <li>
+                            <label for="d-day">배송 지정</label>
+                            <input type="date" id="d-day">
+                        </li>
+                        <li>
+                            <label for="memo">매모</label>
+                            <textarea  id="memo" cols="80" rows="6"></textarea><!-- 텍스트공간 만들기 cols는 처음보이는 상자크기, Rows는 처음보이는 4칸 보인다는 뜻 -->
+                        </li>
+                    </ul>
+            </fieldset>
+            <div>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소하기">
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>
